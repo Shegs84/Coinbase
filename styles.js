@@ -1,0 +1,86 @@
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000',
+    alignItems: 'center',
+    padding: 20,
+  },
+  logo: {
+    width: 90,
+    height: 90,
+    resizeMode: 'contain',
+    marginVertical: 20,
+  },
+  header: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  subHeader: {
+    color: 'white',
+    fontSize: 14,
+    marginBottom: 20,
+  },
+  input: {
+    backgroundColor: '#1a1a1a',
+    width: '100%',
+    padding: 12,
+    marginVertical: 8,
+    borderRadius: 8,
+    color: 'white',
+    borderColor: '#444',
+    borderWidth: 1,
+  },
+  button: {
+    backgroundColor: '#00FF00',
+    padding: 14,
+    width: '100%',
+    borderRadius: 30,
+    alignItems: 'center',
+    marginVertical: 10,
+  },
+  buttonText: {
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  googleButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderColor: '#aaa',
+    borderWidth: 1,
+    padding: 12,
+    width: '100%',
+    borderRadius: 30,
+    justifyContent: 'center',
+    marginVertical: 10,
+  },
+  googleText: {
+    fontSize: 14,
+    color: '#fff',
+  },
+  orText: {
+    color: '#aaa',
+    marginVertical: 10,
+  },
+  bottomText: {
+    color: 'white',
+    fontSize: 12,
+    marginTop: 10,
+  },
+  linkText: {
+    color: '#00FF00',
+  },
+  terms: {
+    color: 'white',
+    fontSize: 11,
+    marginTop: 10,
+    textAlign: 'center',
+    width: '90%',
+  },
+  forgotPassword: {
+    alignSelf: 'flex-end',
+    color: '#00FF00',
+    marginBottom: 10,
+  },
+});

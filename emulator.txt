@@ -1,0 +1,57 @@
+online android emulator
+
+1) Open JDK 8
+3) Android Command line tools
+5) HAXM
+
+C:\Users\Segun\AndroidSDK\platform-tools
+C:\Users\Segun\AndroidSDK\emulator
+
+C:\Users\Segun\AndroidSDK\emulator
+
+
+19.0
+sdkmanager --licenses 
+sdkmanager --list 
+sdkmanager "build-tools;30.0.0" 
+sdkmanager "platforms;android-30"
+
+
+For more information and before starting your online registration please read our privacy statement here
+
+I hereby consent to British Airways collecting, storing and processing my data in accordance with the privacy policy.
+I understand that I may withdraw my consent or update my details at any time.
+
+
+#1 Android Emulator Online
+
+setx JAVA_HOME "C:\Program Files\Java\jdk-25"
+
+sdkmanager 
+
+sdkmanager "platforms;android-36" "system-images;android-36;google_apis;x86_64" "platform-tools"
+avdmanager create avd -n Samsung -k "system-images;android-36;google_apis;x86_64" --device "pixel_8"
+
+which devices can i use for android emulator
+
+1080x2400
+https://developer.android.com/studio/run/managing-avds
+https://learn.microsoft.com/en-us/dotnet/maui/android/emulator/device-manager?view=net-maui-9.0
+
+
+C:\Users\Segun\.android\avd\Samsung.avd
+emulator -avd Samsung
+cd %ANDROID_SDK_ROOT%\emulator
+
+ERROR unable to connect to adb daemon on port: 5037
+
+Error: The emulator (Samsung) quit before it finished opening. You can try starting the emulator manually from the terminal with: C:\Users\Segun\AndroidSDK/emulator/emulator @Samsung
+
+
+https://dev.to/andreisfedotov/how-to-install-android-emulator-without-installing-android-studio-3lce
+
+
+cd %ANDROID_HOME%\emulator
+https://www.youtube.com/watch?v=591Sme4jxDc
+https://www.youtube.com/watch?v=bOOohUJxEZA
+
