@@ -6,6 +6,7 @@ android/
 ios/
 dist/
 .env
+package-lock.json
 npm-debug.*
 yarn-debug.log*
 yarn-error.log*
