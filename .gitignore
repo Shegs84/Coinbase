@@ -1,7 +1,14 @@
 node_modules/
 .expo/
+.expo-shared/
+web-build/
+android/
+ios/
 dist/
+.env
 npm-debug.*
+yarn-debug.log*
+yarn-error.log*
 *.jks
 *.p8
 *.p12
