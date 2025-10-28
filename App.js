@@ -9,12 +9,11 @@ import * as Font from 'expo-font';
 
 // --- Import all our screens ---
 import AzimaAuthScreen from './components/AzimaAuthScreen';
-import Account from './components/Account';
+import Account from './components/Account'; // <-- FIXED: Changed path
 import HomeScreen from './HomeScreen';
 import CreateLoanScreen from './createLoan';
 import FundLoansScreen from './loansAll';
-// Placeholder screens
-const WalletScreen = () => <View style={styles.container}><Text style={styles.placeholderText}>Wallet Screen</Text></View>; // Fixed: Removed stray _
+import WalletScreen from './components/wallet'; // <-- ADDED: New import for Wallet
 
 // --- Import Supabase ---
 import { supabase } from './lib/supabaseClient';
@@ -133,8 +132,10 @@ function HomeTabs({ session }) { // Fixed: Corrected function syntax
       })}
     >
       <Tab.Screen name="Home" component={MainStack} />
-      <Tab.Screen name="Wallet" component={WalletScreen} />
-      {/* We pass the session to the Profile/Account screen */}
+      {/* We pass the session to the Wallet and Profile screens */}
+      <Tab.Screen name="Wallet">
+        {(props) => <WalletScreen {...props} session={session} />}
+      </Tab.Screen>
       <Tab.Screen name="Profile">
         {(props) => <Account {...props} session={session} />}
       </Tab.Screen>
